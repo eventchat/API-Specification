@@ -125,6 +125,7 @@ Name  |  Type  | Description
 ------|--------|------------
 title | String | **Required** The title of the post
 type  | String | **Required** The type of the post, can be "text", "picture" or "video"
+body  | String | **Required** The content of the post
 
 #### Response
 
