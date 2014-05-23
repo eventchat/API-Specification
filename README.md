@@ -12,7 +12,6 @@ EventChat API Specification
   * [Get posts owned by a single user](#get-posts-owned-by-a-single-user)
   * [Get posts for current user's feed](#get-posts-for-current-users-feed)
 * [Comment](#comment)
-  * [Get comments for a single post](#get-comments-for-a-single-post)
   * [Create a new comment for a single post](#create-a-new-comment-for-a-single-post)
 * [Event](#event)
   * [Get a single event](#get-a-single-event)
@@ -228,4 +227,26 @@ Status: 200 OK
         ]
     }
 ]
+```
+
+
+## Comment
+
+### Create a new comment for a single post
+
+```
+POST /posts/:post_id/comments
+```
+
+#### Body
+
+Name  |  Type  | Description
+------|--------|------------
+body  | String | **Required** The content of the comment
+
+
+#### Response
+
+```
+Status: 200 OK
 ```
