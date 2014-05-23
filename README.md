@@ -333,3 +333,31 @@ DELETE /events/:event_id
 ```
 Status: 200 OK
 ```
+
+## Message
+
+### Get all messages for a single event
+
+```
+GET /events/:event_id/messages
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "author": {
+            "id": 1,
+            "avatar_url": "http://gravatar.com/1.png",
+            "name": "John Dow"
+        },
+        "body": "Hello everyone :)",
+        "created_at": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)"
+    }
+]
+```
