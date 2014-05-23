@@ -87,7 +87,7 @@ GET /posts/:post_id
 Status: 200 OK
 ```
 
-```
+```json
 {
     "id": 1,
     "title": "what's the answer to life the universe and everything?",
@@ -160,7 +160,7 @@ GET /users/:user_id/posts
 Status: 200 OK
 ```
 
-```
+```json
 [
     {
         "id": 1,
@@ -199,7 +199,7 @@ GET /posts/feed
 Status: 200 OK
 ```
 
-```
+```json
 [
     {
         "id": 1,
