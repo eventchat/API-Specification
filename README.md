@@ -25,3 +25,48 @@ EventChat API Specification
   * [Get all notifications](#get-all-notifications)
   * [Mark a single notification as read](#mark-a-single-notification-as-read)
   * [Mark all notifications as read](#mark-all-notifications-as-read)
+
+
+
+## User
+
+### Get a single user
+
+```
+GET /users/:user_id
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+{
+    "id": 1,
+    "name": "John Dow",
+    "email": "johndow@example.com",
+    "info": "I'm John Dow."
+}
+```
+
+### Create a new user
+
+```
+POST /users
+```
+
+#### Body
+
+Name  |  Type  | Description
+------|--------|------------
+name  | String | **Required** The name of the user
+email | String | **Required** The email of the user
+info  | String | The self-description of the user
+
+#### Response
+
+```
+Status: 200 OK
+```
