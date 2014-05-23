@@ -251,3 +251,85 @@ body  | String | **Required** The content of the comment
 ```
 Status: 200 OK
 ```
+
+
+## Event
+
+### Get a single event
+
+```
+GET /events/:event_id
+```
+
+#### Response
+
+```json
+{
+    "name": "Pycon",
+    "longitude": 23.562312,
+    "latitude": -53.90145,
+    "start_time": "Fri May 23 2014 14:10:05 GMT-0700 (PDT)",
+    "end_time": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)",
+    "description": "Python Conference"
+}
+```
+
+### Create a new event
+
+```
+POST /events
+```
+
+#### Body
+
+Name        |  Type  | Description
+------------|--------|------------
+name        | String | **Required** The name of the event
+longitude   | Number | **Required** The longitude of the event location
+latitude    | Number | **Required** The latitude of the event location
+start_time  | String | The start time of the event
+end_time    | String | The end time of the event
+description | String | The description of the event
+
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+### Update an event
+
+```
+PATCH /events
+```
+
+#### Body
+
+Name        |  Type  | Description
+------------|--------|------------
+name        | String | **Required** The name of the event
+longitude   | Number | **Required** The longitude of the event location
+latitude    | Number | **Required** The latitude of the event location
+start_time  | String | The start time of the event
+end_time    | String | The end time of the event
+description | String | The description of the event
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+### Delete an event
+
+```
+DELETE /events/:event_id
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
