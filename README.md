@@ -173,16 +173,18 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
-        "comments": [{
-            "id": 3,
-            "author": {
-                "id": 2,
-                "avatar_url": "http://gravatar.com/2.png",
-                "name": "John Snow"
-            },
-            "body": "This is awesome!!!",
-            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
-        }]
+        "comments": [
+            {
+                "id": 3,
+                "author": {
+                    "id": 2,
+                    "avatar_url": "http://gravatar.com/2.png",
+                    "name": "John Snow"
+                },
+                "body": "This is awesome!!!",
+                "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+            }
+        ]
     }
 ]
 ```
@@ -212,16 +214,18 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
-        "comments": [{
-            "id": 3,
-            "author": {
-                "id": 2,
-                "avatar_url": "http://gravatar.com/2.png",
-                "name": "John Snow"
-            },
-            "body": "This is awesome!!!",
-            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
-        }]
+        "comments": [
+            {
+                "id": 3,
+                "author": {
+                    "id": 2,
+                    "avatar_url": "http://gravatar.com/2.png",
+                    "name": "John Snow"
+                },
+                "body": "This is awesome!!!",
+                "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+            }
+        ]
     }
 ]
 ```
