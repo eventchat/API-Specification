@@ -361,3 +361,57 @@ Status: 200 OK
     }
 ]
 ```
+
+## Notification
+
+### Get all notifications
+
+```
+GET /notifications
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "id": 1,
+        "type": "comment",
+        "body": "@john commented on your post",
+        "is_read": false,
+        "created_at": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)"
+    }
+]
+```
+
+
+### Mark a single notification as read
+
+```
+PATCH /notifications/:notification_id
+```
+
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+### Mark all notifications as read
+
+```
+PATCH /notifications
+```
+
+
+#### Response
+
+```
+Status: 200 OK
+```
