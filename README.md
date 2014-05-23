@@ -10,7 +10,7 @@ EventChat API Specification
   * [Create a new post](#create-a-new-post)
   * [Delete a post](#delete-a-post)
   * [Get posts owned by a single user](#get-posts-owned-by-a-single-user)
-  * [Get posts for a single user's feed](#get-posts-for-a-single-users-feed)
+  * [Get posts for current user's feed](#get-posts-for-current-users-feed)
 * [Comment](#comment)
   * [Get comments for a single post](#get-comments-for-a-single-post)
   * [Create a new comment for a single post](#create-a-new-comment-for-a-single-post)
@@ -47,7 +47,8 @@ Status: 200 OK
     "id": 1,
     "name": "John Dow",
     "email": "johndow@example.com",
-    "info": "I'm John Dow."
+    "info": "I'm John Dow.",
+    "avatar_url": "http://gravatar.com/1.png"
 }
 ```
 
@@ -69,4 +70,158 @@ info  | String | The self-description of the user
 
 ```
 Status: 200 OK
+```
+
+
+## Post
+
+### Get a single post
+
+```
+GET /posts/:post_id
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```
+{
+    "id": 1,
+    "title": "what's the answer to life the universe and everything?",
+    "type": "text",
+    "body": "It's 42",
+    "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+    "author": {
+        "id": 1,
+        "avatar_url": "http://gravatar.com/1.png",
+        "name": "John Dow"
+    },
+    "comments": [
+        {
+            "id": 3,
+            "author": {
+                "id": 2,
+                "avatar_url": "http://gravatar.com/2.png",
+                "name": "John Snow"
+            },
+            "body": "This is awesome!!!",
+            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+        }
+    ]
+}
+```
+
+### Create a new post
+
+```
+POST /posts
+```
+
+#### Body
+
+Name  |  Type  | Description
+------|--------|------------
+title | String | **Required** The title of the post
+type  | String | **Required** The type of the post, can be "text", "picture" or "video"
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+### Delete a post
+
+```
+DELETE /posts/:post_id
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+
+### Get posts owned by a single user
+
+```
+GET /users/:user_id/posts
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```
+[
+    {
+        "id": 1,
+        "title": "what's the answer to life the universe and everything?",
+        "type": "text",
+        "body": "It's 42",
+        "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+        "author": {
+            "id": 1,
+            "avatar_url": "http://gravatar.com/1.png",
+            "name": "John Dow"
+        },
+        "comments": [{
+            "id": 3,
+            "author": {
+                "id": 2,
+                "avatar_url": "http://gravatar.com/2.png",
+                "name": "John Snow"
+            },
+            "body": "This is awesome!!!",
+            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+        }]
+    }
+]
+```
+
+### Get posts for current user's feed
+
+```
+GET /posts/feed
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```
+[
+    {
+        "id": 1,
+        "title": "what's the answer to life the universe and everything?",
+        "type": "text",
+        "body": "It's 42",
+        "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+        "author": {
+            "id": 1,
+            "avatar_url": "http://gravatar.com/1.png",
+            "name": "John Dow"
+        },
+        "comments": [{
+            "id": 3,
+            "author": {
+                "id": 2,
+                "avatar_url": "http://gravatar.com/2.png",
+                "name": "John Snow"
+            },
+            "body": "This is awesome!!!",
+            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+        }]
+    }
+]
 ```
