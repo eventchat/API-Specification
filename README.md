@@ -2,6 +2,9 @@ EventChat API Specification
 ===========================
 
 
+* [Overview](#overview)
+  * [ID](#id)
+  * [DateTime](#datetime)
 * [User](#user)
   * [Get a single user](#get-a-single-user)
   * [Create a new user](#create-a-new-user)
@@ -25,6 +28,19 @@ EventChat API Specification
   * [Mark a single notification as read](#mark-a-single-notification-as-read)
   * [Mark all notifications as read](#mark-all-notifications-as-read)
 
+
+## Overview
+
+### ID
+
+Since MongoDB is being used as the backend storage, the IDs are in the MongoDB
+ObjectID format, which look like "5384c6cc96eb36aa242cfdc6",
+instead of the traditional auto-incrementing number ID such as 1, 2, 3.
+
+
+### DateTime
+
+All datetimes are represented in ISO8601 standard, which looks like "2012-01-01T12:00:00Z".
 
 
 ## User
