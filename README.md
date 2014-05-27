@@ -59,7 +59,7 @@ Status: 200 OK
 
 ```json
 {
-    "id": 1,
+    "id": "5384c6cc96eb36aa242cfdc6",
     "name": "John Dow",
     "email": "johndow@example.com",
     "info": "I'm John Dow.",
@@ -105,18 +105,18 @@ Status: 200 OK
 
 ```json
 {
-    "id": 1,
+    "id": "5384c6cc96eb36aa242cfdc6",
     "title": "what's the answer to life the universe and everything?",
     "type": "text",
     "body": "It's 42",
     "created_at": "2014-05-27T17:16:28.709Z",
     "author": {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "avatar_url": "http://gravatar.com/1.png",
         "name": "John Dow"
     },
     "event": {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "name": "PyCon",
         "description": "Python Conference",
         "latitude": 23.4567,
@@ -126,9 +126,9 @@ Status: 200 OK
     },
     "comments": [
         {
-            "id": 3,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "author": {
-                "id": 2,
+                "id": ""5384c6cc96eb36aa242cfdc6",
                 "avatar_url": "http://gravatar.com/2.png",
                 "name": "John Snow"
             },
@@ -190,18 +190,18 @@ Status: 200 OK
 ```json
 [
     {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "title": "what's the answer to life the universe and everything?",
         "type": "text",
         "body": "It's 42",
         "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
-            "id": 1,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
         "event": {
-            "id": 1,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "name": "PyCon",
             "description": "Python Conference",
             "latitude": 23.4567,
@@ -211,9 +211,9 @@ Status: 200 OK
         },
         "comments": [
             {
-                "id": 3,
+                "id": "5384c6cc96eb36aa242cfdc6",
                 "author": {
-                    "id": 2,
+                    "id": "5384c6cc96eb36aa242cfdc6",
                     "avatar_url": "http://gravatar.com/2.png",
                     "name": "John Snow"
                 },
@@ -240,18 +240,18 @@ Status: 200 OK
 ```json
 [
     {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "title": "what's the answer to life the universe and everything?",
         "type": "text",
         "body": "It's 42",
         "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
-            "id": 1,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
         "event": {
-            "id": 1,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "name": "PyCon",
             "description": "Python Conference",
             "latitude": 23.4567,
@@ -261,9 +261,9 @@ Status: 200 OK
         },
         "comments": [
             {
-                "id": 3,
+                "id": "5384c6cc96eb36aa242cfdc6",
                 "author": {
-                    "id": 2,
+                    "id": "5384c6cc96eb36aa242cfdc6",
                     "avatar_url": "http://gravatar.com/2.png",
                     "name": "John Snow"
                 },
@@ -310,7 +310,7 @@ GET /events/:event_id
 
 ```json
 {
-    "id": 1,
+    "id": "5384c6cc96eb36aa242cfdc6",
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
@@ -397,9 +397,9 @@ Status: 200 OK
 ```json
 [
     {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "author": {
-            "id": 1,
+            "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
@@ -426,7 +426,7 @@ Status: 200 OK
 ```json
 [
     {
-        "id": 1,
+        "id": "5384c6cc96eb36aa242cfdc6",
         "type": "comment",
         "body": "@john commented on your post",
         "is_read": false,
