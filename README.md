@@ -63,7 +63,8 @@ Status: 200 OK
     "name": "John Dow",
     "email": "johndow@example.com",
     "info": "I'm John Dow.",
-    "avatar_url": "http://gravatar.com/1.png"
+    "avatar_url": "http://gravatar.com/1.png",
+    "created_at": "2014-05-27T17:16:28.709Z"
 }
 ```
 
