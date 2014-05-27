@@ -128,7 +128,7 @@ Status: 200 OK
         {
             "id": "5384c6cc96eb36aa242cfdc6",
             "author": {
-                "id": ""5384c6cc96eb36aa242cfdc6",
+                "id": "5384c6cc96eb36aa242cfdc6",
                 "avatar_url": "http://gravatar.com/2.png",
                 "name": "John Snow"
             },
