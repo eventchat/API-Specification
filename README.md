@@ -114,6 +114,15 @@ Status: 200 OK
         "avatar_url": "http://gravatar.com/1.png",
         "name": "John Dow"
     },
+    "event": {
+        "id": 1,
+        "name": "PyCon",
+        "description": "Python Conference",
+        "latitude": 23.4567,
+        "longitude": -122.4535,
+        "start_time": "2014-05-27T17:16:28.709Z",
+        "end_time": "2014-05-27T17:16:28.709Z"
+    },
     "comments": [
         {
             "id": 3,
@@ -137,11 +146,12 @@ POST /posts
 
 #### Body
 
-Name  |  Type  | Description
-------|--------|------------
-title | String | **Required** The title of the post
-type  | String | **Required** The type of the post, can be "text", "picture" or "video"
-body  | String | **Required** The content of the post
+Name     |  Type  | Description
+---------|--------|------------
+title    | String | **Required** The title of the post
+type     | String | **Required** The type of the post, can be "text", "picture" or "video"
+body     | String | **Required** The content of the post
+event_id | String | **Required** The id of the associated event
 
 #### Response
 
@@ -189,6 +199,15 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
         },
+        "event": {
+            "id": 1,
+            "name": "PyCon",
+            "description": "Python Conference",
+            "latitude": 23.4567,
+            "longitude": -122.4535,
+            "start_time": "2014-05-27T17:16:28.709Z",
+            "end_time": "2014-05-27T17:16:28.709Z"
+        },
         "comments": [
             {
                 "id": 3,
@@ -229,6 +248,15 @@ Status: 200 OK
             "id": 1,
             "avatar_url": "http://gravatar.com/1.png",
             "name": "John Dow"
+        },
+        "event": {
+            "id": 1,
+            "name": "PyCon",
+            "description": "Python Conference",
+            "latitude": 23.4567,
+            "longitude": -122.4535,
+            "start_time": "2014-05-27T17:16:28.709Z",
+            "end_time": "2014-05-27T17:16:28.709Z"
         },
         "comments": [
             {
