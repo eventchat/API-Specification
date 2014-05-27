@@ -265,6 +265,7 @@ GET /events/:event_id
 
 ```json
 {
+    "id": 1,
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
@@ -351,6 +352,7 @@ Status: 200 OK
 ```json
 [
     {
+        "id": 1,
         "author": {
             "id": 1,
             "avatar_url": "http://gravatar.com/1.png",
