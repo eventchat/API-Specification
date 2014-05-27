@@ -92,7 +92,7 @@ Status: 200 OK
     "title": "what's the answer to life the universe and everything?",
     "type": "text",
     "body": "It's 42",
-    "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+    "created_at": "2014-05-27T17:16:28.709Z",
     "author": {
         "id": 1,
         "avatar_url": "http://gravatar.com/1.png",
@@ -107,7 +107,7 @@ Status: 200 OK
                 "name": "John Snow"
             },
             "body": "This is awesome!!!",
-            "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+            "created_at": "2014-05-27T17:16:28.709Z"
         }
     ]
 }
@@ -167,7 +167,7 @@ Status: 200 OK
         "title": "what's the answer to life the universe and everything?",
         "type": "text",
         "body": "It's 42",
-        "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+        "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
             "id": 1,
             "avatar_url": "http://gravatar.com/1.png",
@@ -182,7 +182,7 @@ Status: 200 OK
                     "name": "John Snow"
                 },
                 "body": "This is awesome!!!",
-                "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+                "created_at": "2014-05-27T17:16:28.709Z"
             }
         ]
     }
@@ -208,7 +208,7 @@ Status: 200 OK
         "title": "what's the answer to life the universe and everything?",
         "type": "text",
         "body": "It's 42",
-        "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)",
+        "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
             "id": 1,
             "avatar_url": "http://gravatar.com/1.png",
@@ -223,7 +223,7 @@ Status: 200 OK
                     "name": "John Snow"
                 },
                 "body": "This is awesome!!!",
-                "created_at": "Fri May 23 2014 12:54:31 GMT-0700 (PDT)"
+                "created_at": "2014-05-27T17:16:28.709Z"
             }
         ]
     }
@@ -269,8 +269,8 @@ GET /events/:event_id
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
-    "start_time": "Fri May 23 2014 14:10:05 GMT-0700 (PDT)",
-    "end_time": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)",
+    "start_time": "2014-05-27T17:16:28.709Z",
+    "end_time": "2014-05-27T17:16:28.709Z",
     "description": "Python Conference"
 }
 ```
@@ -359,7 +359,7 @@ Status: 200 OK
             "name": "John Dow"
         },
         "body": "Hello everyone :)",
-        "created_at": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)"
+        "created_at": "2014-05-27T17:16:28.709Z"
     }
 ]
 ```
@@ -385,7 +385,7 @@ Status: 200 OK
         "type": "comment",
         "body": "@john commented on your post",
         "is_read": false,
-        "created_at": "Fri May 23 2014 15:10:05 GMT-0700 (PDT)"
+        "created_at": "2014-05-27T17:16:28.709Z"
     }
 ]
 ```
