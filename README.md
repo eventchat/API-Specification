@@ -13,7 +13,7 @@ EventChat API Specification
   * [Create a new post](#create-a-new-post)
   * [Delete a post](#delete-a-post)
   * [Get posts owned by a single user](#get-posts-owned-by-a-single-user)
-  * [Get posts for current user's feed](#get-posts-for-current-users-feed)
+  * [Search posts](#search-posts)
 * [Comment](#comment)
   * [Create a new comment for a single post](#create-a-new-comment-for-a-single-post)
 * [Event](#event)
@@ -225,11 +225,28 @@ Status: 200 OK
 ]
 ```
 
-### Get posts for current user's feed
+### Search Posts
 
 ```
-GET /posts/feed
+GET /posts/search
 ```
+
+#### Parameters
+
+Name         |  Type  | Description
+-------------|--------|----------------------
+latitude     | Number | Latitude of the post
+longitude    | Number | Longitude of the post
+max_distance | Number | Max distance from the specified coordinate, in meters. (Default 500)
+
+#### Example
+
+
+```
+GET /posts/search?latitude=23.4567&longitude=-122.4535&max_distance=1000
+```
+
+will return posts within 1000 meters from the coordinate 23.4567° N, 122.4535° W.
 
 #### Response
 
