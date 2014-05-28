@@ -5,6 +5,10 @@ EventChat API Specification
 * [Overview](#overview)
   * [ID](#id)
   * [DateTime](#datetime)
+* [Authentication](#authentication)
+  * [Login](#login)
+  * [Logout](#logout)
+  * [Check login status](#check-login-status)
 * [User](#user)
   * [Get a single user](#get-a-single-user)
   * [Create a new user](#create-a-new-user)
@@ -42,6 +46,59 @@ instead of the traditional auto-incrementing number ID such as 1, 2, 3.
 
 All datetimes are represented in ISO8601 standard, which looks like "2012-01-01T12:00:00Z".
 
+
+## Authentication
+
+
+### Login
+
+```
+POST /session
+```
+
+#### Body
+
+Name     |  Type  | Description
+---------|--------|------------
+name     | String | **Required** The name of the user
+password | String | **Required** The password of the user
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+### Logout
+
+```
+DELETE /session
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+### Check login status
+
+```
+GET /session
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+```json
+{
+    "logged_in": true
+}
+```
 
 ## User
 
