@@ -3,6 +3,7 @@ EventChat API Specification
 
 
 * [Overview](#overview)
+  * [API Server](#api-server)
   * [ID](#id)
   * [DateTime](#datetime)
 * [Authentication](#authentication)
