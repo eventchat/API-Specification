@@ -35,6 +35,15 @@ EventChat API Specification
 
 ## Overview
 
+
+### API Server
+
+The API Server is deployed on Heroku and is available at
+
+http://eventchat.herokuapp.com
+
+All API paths described below are relative to this url.
+
 ### ID
 
 Since MongoDB is being used as the backend storage, the IDs are in the MongoDB
