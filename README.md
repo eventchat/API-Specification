@@ -143,11 +143,12 @@ POST /users
 
 #### Body
 
-Name  |  Type  | Description
-------|--------|------------
-name  | String | **Required** The name of the user
-email | String | **Required** The email of the user
-info  | String | The self-description of the user
+Name     |  Type  | Description
+---------|--------|------------
+name     | String | **Required** The name of the user
+email    | String | **Required** The email of the user
+password | String | **Required** The password of the user
+info     | String | The self-description of the user
 
 #### Response
 
