@@ -79,6 +79,17 @@ password | String | **Required** The password of the user
 Status: 200 OK
 ```
 
+```json
+{
+    "id": "5384c6cc96eb36aa242cfdc6",
+    "name": "John Dow",
+    "email": "johndow@example.com",
+    "info": "I'm John Dow.",
+    "avatar_url": "http://gravatar.com/1.png",
+    "created_at": "2014-05-27T17:16:28.709Z"
+}
+```
+
 ### Logout
 
 ```
