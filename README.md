@@ -690,7 +690,7 @@ Status: 200 OK
 ```json
 [
     {
-        from: {
+        "from": {
             "id": "5384c6cc96eb36aa242cfdc6",
             "name": "John Dow",
             "email": "johndow@example.com",
@@ -698,10 +698,10 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
-        message: 'how are you?'
+        "message": "how are you?"
     },
     {
-        from: {
+        "from": {
             "id": "5384c6cc96eb36aa242cfdc6",
             "name": "John Dow",
             "email": "johndow@example.com",
@@ -709,7 +709,7 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
-        message: 'how do you do'
+        "message": "how do you do"
     }
 ]
 ```
