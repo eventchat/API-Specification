@@ -32,6 +32,9 @@ EventChat API Specification
   * [Get all notifications](#get-all-notifications)
   * [Mark a single notification as read](#mark-a-single-notification-as-read)
   * [Mark all notifications as read](#mark-all-notifications-as-read)
+* [Chat](#chat)
+  * [Get all unread messages sent to the current user]('#get-all-unread-messages-sent-to-current-user')
+  * [Send a message to a specific user]('#send-a-message-to-a-specific-user')
 
 
 ## Overview
@@ -660,6 +663,72 @@ Status: 200 OK
 PATCH /notifications
 ```
 
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+
+## Chat
+
+### Get all unread messages sent to the current user
+
+NOTE: login required
+
+```
+GET /chat
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        from: {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Dow",
+            "email": "johndow@example.com",
+            "info": "I'm John Dow.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
+        message: 'how are you?'
+    },
+    {
+        from: {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Dow",
+            "email": "johndow@example.com",
+            "info": "I'm John Dow.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
+        message: 'how do you do'
+    }
+]
+```
+
+
+### Send a message to a specific user
+
+NOTE: login required
+
+```
+POST /chat
+```
+
+#### Body
+
+Name        |  Type  | Description
+------------|--------|------------
+to          | String | **Required** The id of the receiver
+message     | String | **Required** The message to send
 
 #### Response
 
