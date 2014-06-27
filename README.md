@@ -698,7 +698,8 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
-        "message": "how are you?"
+        "message": "how are you?",
+        "created_at": "2014-05-27T17:16:28.709Z"
     },
     {
         "from": {
@@ -709,7 +710,8 @@ Status: 200 OK
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
-        "message": "how do you do"
+        "message": "how do you do",
+        "created_at": "2014-05-27T17:16:28.709Z"
     }
 ]
 ```
