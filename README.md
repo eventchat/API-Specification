@@ -26,6 +26,7 @@ EventChat API Specification
   * [Create a new event](#create-a-new-event)
   * [Delete an event](#delete-an-event)
   * [Update an event](#update-an-event)
+  * [Search events](#search-events)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Notification](#notification)
@@ -612,6 +613,49 @@ Status: 200 OK
         },
         "body": "Hello everyone :)",
         "created_at": "2014-05-27T17:16:28.709Z"
+    }
+]
+```
+
+### Search Events
+
+```
+GET /events/search
+```
+
+#### Parameters
+
+Name         |  Type  | Description
+-------------|--------|----------------------
+latitude     | Number | Latitude of the post
+longitude    | Number | Longitude of the post
+max_distance | Number | Max distance from the specified coordinate, in meters. (Default 500)
+
+#### Example
+
+
+```
+GET /events/search?latitude=23.4567&longitude=-122.4535&max_distance=1000
+```
+
+will return events within 1000 meters from the coordinate 23.4567° N, 122.4535° W.
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "Pycon",
+        "longitude": 23.562312,
+        "latitude": -53.90145,
+        "start_time": "2014-05-27T17:16:28.709Z",
+        "end_time": "2014-05-27T17:16:28.709Z",
+        "description": "Python Conference"
     }
 ]
 ```
