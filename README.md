@@ -215,6 +215,7 @@ Status: 200 OK
         "description": "Python Conference",
         "latitude": 23.4567,
         "longitude": -122.4535,
+        "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
         "start_time": "2014-05-27T17:16:28.709Z",
         "end_time": "2014-05-27T17:16:28.709Z"
     },
@@ -272,6 +273,7 @@ Status: 200 OK
         "description": "Python Conference",
         "latitude": 23.4567,
         "longitude": -122.4535,
+        "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
         "start_time": "2014-05-27T17:16:28.709Z",
         "end_time": "2014-05-27T17:16:28.709Z"
     },
@@ -337,6 +339,7 @@ Status: 200 OK
             "description": "Python Conference",
             "latitude": 23.4567,
             "longitude": -122.4535,
+            "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
             "start_time": "2014-05-27T17:16:28.709Z",
             "end_time": "2014-05-27T17:16:28.709Z"
         },
@@ -404,6 +407,7 @@ Status: 200 OK
             "description": "Python Conference",
             "latitude": 23.4567,
             "longitude": -122.4535,
+            "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
             "start_time": "2014-05-27T17:16:28.709Z",
             "end_time": "2014-05-27T17:16:28.709Z"
         },
@@ -463,6 +467,7 @@ Status: 200 OK
         "description": "Python Conference",
         "latitude": 23.4567,
         "longitude": -122.4535,
+        "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
         "start_time": "2014-05-27T17:16:28.709Z",
         "end_time": "2014-05-27T17:16:28.709Z"
     },
@@ -499,6 +504,7 @@ GET /events/:event_id
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
+    "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
     "start_time": "2014-05-27T17:16:28.709Z",
     "end_time": "2014-05-27T17:16:28.709Z",
     "description": "Python Conference"
@@ -518,6 +524,7 @@ Name        |  Type  | Description
 name        | String | **Required** The name of the event
 longitude   | Number | **Required** The longitude of the event location
 latitude    | Number | **Required** The latitude of the event location
+address     | String | The postal address of the event
 start_time  | String | The start time of the event
 end_time    | String | The end time of the event
 description | String | The description of the event
@@ -535,6 +542,7 @@ Status: 200 OK
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
+    "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
     "start_time": "2014-05-27T17:16:28.709Z",
     "end_time": "2014-05-27T17:16:28.709Z",
     "description": "Python Conference"
@@ -554,6 +562,7 @@ Name        |  Type  | Description
 name        | String | **Required** The name of the event
 longitude   | Number | **Required** The longitude of the event location
 latitude    | Number | **Required** The latitude of the event location
+address     | String | The postal address of the event
 start_time  | String | The start time of the event
 end_time    | String | The end time of the event
 description | String | The description of the event
@@ -570,6 +579,7 @@ Status: 200 OK
     "name": "Pycon",
     "longitude": 23.562312,
     "latitude": -53.90145,
+    "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
     "start_time": "2014-05-27T17:16:28.709Z",
     "end_time": "2014-05-27T17:16:28.709Z",
     "description": "Python Conference"
@@ -653,6 +663,7 @@ Status: 200 OK
         "name": "Pycon",
         "longitude": 23.562312,
         "latitude": -53.90145,
+        "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
         "start_time": "2014-05-27T17:16:28.709Z",
         "end_time": "2014-05-27T17:16:28.709Z",
         "description": "Python Conference"
