@@ -27,6 +27,7 @@ EventChat API Specification
   * [Delete an event](#delete-an-event)
   * [Update an event](#update-an-event)
   * [Search events](#search-events)
+  * [Join an event](#join-an-event)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Notification](#notification)
@@ -670,6 +671,19 @@ Status: 200 OK
     }
 ]
 ```
+
+### Join an event
+
+```
+POST /events/:event_id/attendees
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
 
 ## Notification
 
