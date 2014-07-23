@@ -28,6 +28,7 @@ EventChat API Specification
   * [Update an event](#update-an-event)
   * [Search events](#search-events)
   * [Join an event](#join-an-event)
+  * [Get attendees for a single event](#get-attendees-for-a-single-event)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Notification](#notification)
@@ -87,9 +88,9 @@ Status: 200 OK
 ```json
 {
     "id": "5384c6cc96eb36aa242cfdc6",
-    "name": "John Dow",
-    "email": "johndow@example.com",
-    "info": "I'm John Dow.",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "info": "I'm John Doe.",
     "avatar_url": "http://gravatar.com/1.png",
     "created_at": "2014-05-27T17:16:28.709Z"
 }
@@ -143,9 +144,9 @@ Status: 200 OK
 ```json
 {
     "id": "5384c6cc96eb36aa242cfdc6",
-    "name": "John Dow",
-    "email": "johndow@example.com",
-    "info": "I'm John Dow.",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "info": "I'm John Doe.",
     "avatar_url": "http://gravatar.com/1.png",
     "created_at": "2014-05-27T17:16:28.709Z"
 }
@@ -175,9 +176,9 @@ Status: 200 OK
 ```json
 {
     "id": "5384c6cc96eb36aa242cfdc6",
-    "name": "John Dow",
-    "email": "johndow@example.com",
-    "info": "I'm John Dow.",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "info": "I'm John Doe.",
     "avatar_url": "http://gravatar.com/1.png",
     "created_at": "2014-05-27T17:16:28.709Z"
 }
@@ -208,7 +209,7 @@ Status: 200 OK
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Dow"
+        "name": "John Doe"
     },
     "event": {
         "id": "5384c6cc96eb36aa242cfdc6",
@@ -266,7 +267,7 @@ Status: 200 OK
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Dow"
+        "name": "John Doe"
     },
     "event": {
         "id": "5384c6cc96eb36aa242cfdc6",
@@ -332,7 +333,7 @@ Status: 200 OK
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Dow"
+            "name": "John Doe"
         },
         "event": {
             "id": "5384c6cc96eb36aa242cfdc6",
@@ -400,7 +401,7 @@ Status: 200 OK
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Dow"
+            "name": "John Doe"
         },
         "event": {
             "id": "5384c6cc96eb36aa242cfdc6",
@@ -460,7 +461,7 @@ Status: 200 OK
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Dow"
+        "name": "John Doe"
     },
     "event": {
         "id": "5384c6cc96eb36aa242cfdc6",
@@ -620,7 +621,7 @@ Status: 200 OK
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Dow"
+            "name": "John Doe"
         },
         "body": "Hello everyone :)",
         "created_at": "2014-05-27T17:16:28.709Z"
@@ -682,6 +683,32 @@ POST /events/:event_id/attendees
 
 ```
 Status: 200 OK
+```
+
+
+### Get attendees for a single event
+
+```
+GET /events/:event_id/attendees
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
+        "avatar_url": "http://gravatar.com/1.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    }
+]
 ```
 
 
@@ -761,9 +788,9 @@ Status: 200 OK
     {
         "from": {
             "id": "5384c6cc96eb36aa242cfdc6",
-            "name": "John Dow",
-            "email": "johndow@example.com",
-            "info": "I'm John Dow.",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
@@ -773,9 +800,9 @@ Status: 200 OK
     {
         "from": {
             "id": "5384c6cc96eb36aa242cfdc6",
-            "name": "John Dow",
-            "email": "johndow@example.com",
-            "info": "I'm John Dow.",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
             "avatar_url": "http://gravatar.com/1.png",
             "created_at": "2014-05-27T17:16:28.709Z"
         },
