@@ -208,10 +208,21 @@ Status: 200 OK
     "created_at": "2014-05-27T17:16:28.709Z",
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Doe"
+        "created_at": "2014-05-27T17:16:28.709Z"
     },
     "event": {
+        "organizer": {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
         "id": "5384c6cc96eb36aa242cfdc6",
         "name": "PyCon",
         "description": "Python Conference",
@@ -226,8 +237,11 @@ Status: 200 OK
             "id": "5384c6cc96eb36aa242cfdc6",
             "author": {
                 "id": "5384c6cc96eb36aa242cfdc6",
-                "avatar_url": "http://gravatar.com/2.png",
-                "name": "John Snow"
+                "name": "John Doe",
+                "email": "johndoe@example.com",
+                "info": "I'm John Doe.",
+                "avatar_url": "http://gravatar.com/1.png",
+                "created_at": "2014-05-27T17:16:28.709Z"
             },
             "body": "This is awesome!!!",
             "created_at": "2014-05-27T17:16:28.709Z"
@@ -266,10 +280,21 @@ Status: 200 OK
     "created_at": "2014-05-27T17:16:28.709Z",
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Doe"
+        "created_at": "2014-05-27T17:16:28.709Z"
     },
     "event": {
+        "organizer": {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
         "id": "5384c6cc96eb36aa242cfdc6",
         "name": "PyCon",
         "description": "Python Conference",
@@ -284,8 +309,11 @@ Status: 200 OK
             "id": "5384c6cc96eb36aa242cfdc6",
             "author": {
                 "id": "5384c6cc96eb36aa242cfdc6",
-                "avatar_url": "http://gravatar.com/2.png",
-                "name": "John Snow"
+                "name": "John Doe",
+                "email": "johndoe@example.com",
+                "info": "I'm John Doe.",
+                "avatar_url": "http://gravatar.com/1.png",
+                "created_at": "2014-05-27T17:16:28.709Z"
             },
             "body": "This is awesome!!!",
             "created_at": "2014-05-27T17:16:28.709Z"
@@ -332,10 +360,21 @@ Status: 200 OK
         "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Doe"
+            "created_at": "2014-05-27T17:16:28.709Z"
         },
         "event": {
+            "organizer": {
+                "id": "5384c6cc96eb36aa242cfdc6",
+                "name": "John Doe",
+                "email": "johndoe@example.com",
+                "info": "I'm John Doe.",
+                "avatar_url": "http://gravatar.com/1.png",
+                "created_at": "2014-05-27T17:16:28.709Z"
+            },
             "id": "5384c6cc96eb36aa242cfdc6",
             "name": "PyCon",
             "description": "Python Conference",
@@ -350,8 +389,11 @@ Status: 200 OK
                 "id": "5384c6cc96eb36aa242cfdc6",
                 "author": {
                     "id": "5384c6cc96eb36aa242cfdc6",
-                    "avatar_url": "http://gravatar.com/2.png",
-                    "name": "John Snow"
+                    "name": "John Doe",
+                    "email": "johndoe@example.com",
+                    "info": "I'm John Doe.",
+                    "avatar_url": "http://gravatar.com/1.png",
+                    "created_at": "2014-05-27T17:16:28.709Z"
                 },
                 "body": "This is awesome!!!",
                 "created_at": "2014-05-27T17:16:28.709Z"
@@ -400,10 +442,21 @@ Status: 200 OK
         "created_at": "2014-05-27T17:16:28.709Z",
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Doe"
+            "created_at": "2014-05-27T17:16:28.709Z"
         },
         "event": {
+            "organizer": {
+                "id": "5384c6cc96eb36aa242cfdc6",
+                "name": "John Doe",
+                "email": "johndoe@example.com",
+                "info": "I'm John Doe.",
+                "avatar_url": "http://gravatar.com/1.png",
+                "created_at": "2014-05-27T17:16:28.709Z"
+            },
             "id": "5384c6cc96eb36aa242cfdc6",
             "name": "PyCon",
             "description": "Python Conference",
@@ -418,8 +471,11 @@ Status: 200 OK
                 "id": "5384c6cc96eb36aa242cfdc6",
                 "author": {
                     "id": "5384c6cc96eb36aa242cfdc6",
-                    "avatar_url": "http://gravatar.com/2.png",
-                    "name": "John Snow"
+                    "name": "John Doe",
+                    "email": "johndoe@example.com",
+                    "info": "I'm John Doe.",
+                    "avatar_url": "http://gravatar.com/1.png",
+                    "created_at": "2014-05-27T17:16:28.709Z"
                 },
                 "body": "This is awesome!!!",
                 "created_at": "2014-05-27T17:16:28.709Z"
@@ -460,10 +516,21 @@ Status: 200 OK
     "created_at": "2014-05-27T17:16:28.709Z",
     "author": {
         "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
         "avatar_url": "http://gravatar.com/1.png",
-        "name": "John Doe"
+        "created_at": "2014-05-27T17:16:28.709Z"
     },
     "event": {
+        "organizer": {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
         "id": "5384c6cc96eb36aa242cfdc6",
         "name": "PyCon",
         "description": "Python Conference",
@@ -478,8 +545,11 @@ Status: 200 OK
             "id": "5384c6cc96eb36aa242cfdc6",
             "author": {
                 "id": "5384c6cc96eb36aa242cfdc6",
-                "avatar_url": "http://gravatar.com/2.png",
-                "name": "John Snow"
+                "name": "John Doe",
+                "email": "johndoe@example.com",
+                "info": "I'm John Doe.",
+                "avatar_url": "http://gravatar.com/1.png",
+                "created_at": "2014-05-27T17:16:28.709Z"
             },
             "body": "This is awesome!!!",
             "created_at": "2014-05-27T17:16:28.709Z"
@@ -502,6 +572,14 @@ GET /events/:event_id
 
 ```json
 {
+    "organizer": {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
+        "avatar_url": "http://gravatar.com/1.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    },
     "id": "5384c6cc96eb36aa242cfdc6",
     "name": "Pycon",
     "longitude": 23.562312,
@@ -540,6 +618,14 @@ Status: 200 OK
 
 ```json
 {
+    "organizer": {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
+        "avatar_url": "http://gravatar.com/1.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    },
     "id": "5384c6cc96eb36aa242cfdc6",
     "name": "Pycon",
     "longitude": 23.562312,
@@ -577,6 +663,14 @@ Status: 200 OK
 
 ```json
 {
+    "organizer": {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
+        "avatar_url": "http://gravatar.com/1.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    },
     "id": "5384c6cc96eb36aa242cfdc6",
     "name": "Pycon",
     "longitude": 23.562312,
@@ -620,8 +714,11 @@ Status: 200 OK
         "id": "5384c6cc96eb36aa242cfdc6",
         "author": {
             "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
             "avatar_url": "http://gravatar.com/1.png",
-            "name": "John Doe"
+            "created_at": "2014-05-27T17:16:28.709Z"
         },
         "body": "Hello everyone :)",
         "created_at": "2014-05-27T17:16:28.709Z"
@@ -661,6 +758,14 @@ Status: 200 OK
 ```json
 [
     {
+        "organizer": {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
         "id": "5384c6cc96eb36aa242cfdc6",
         "name": "Pycon",
         "longitude": 23.562312,
