@@ -29,6 +29,7 @@ EventChat API Specification
   * [Search events](#search-events)
   * [Join an event](#join-an-event)
   * [Get attendees for a single event](#get-attendees-for-a-single-event)
+  * [Get all events that a user attends](#get-all-events-that-a-user-attends)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Notification](#notification)
@@ -725,6 +726,44 @@ Status: 200 OK
     }
 ]
 ```
+
+
+### Get all events that a user attends
+
+```
+GET /users/:user_id/events
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "organizer": {
+            "id": "5384c6cc96eb36aa242cfdc6",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "info": "I'm John Doe.",
+            "avatar_url": "http://gravatar.com/1.png",
+            "created_at": "2014-05-27T17:16:28.709Z"
+        },
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "Pycon",
+        "longitude": 23.562312,
+        "latitude": -53.90145,
+        "address": "777 W MiddleField Rd. Mountain View, CA, 94043",
+        "start_time": "2014-05-27T17:16:28.709Z",
+        "end_time": "2014-05-27T17:16:28.709Z",
+        "description": "Python Conference"
+    }
+]
+```
+
+
 
 ### Search Events
 
