@@ -39,8 +39,8 @@ EventChat API Specification
   * [Mark a single notification as read](#mark-a-single-notification-as-read)
   * [Mark all notifications as read](#mark-all-notifications-as-read)
 * [Chat](#chat)
-  * [Get all unread messages sent to the current user]('#get-all-unread-messages-sent-to-current-user')
-  * [Send a message to a specific user]('#send-a-message-to-a-specific-user')
+  * [Get all unread messages sent to the current user](#get-all-unread-messages-sent-to-the-current-user)
+  * [Send a message to a specific user](#send-a-message-to-a-specific-user)
 
 
 ## Overview
