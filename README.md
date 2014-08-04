@@ -531,15 +531,28 @@ Status: 200 OK
 ### Like a post
 
 ```
-POST /posts/:post_id/liked_users
+POST /posts/:post_id/liked_by
 ```
 
-```
+#### Response
 
+```
+Status: 200 OK
 ```
 
 
 ### Unlike a post
+
+```
+DELETE /posts/:post_id/liked_by
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
 
 
 ## Comment
