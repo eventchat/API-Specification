@@ -35,6 +35,7 @@ EventChat API Specification
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Friend](#friend)
+  * [Get all friends of a single user](#get-all-friends-of-a-single-user)
   * [Send a friend request to a user](#send-a-friend-request-to-a-user)
 * [Notification](#notification)
   * [Get all notifications](#get-all-notifications)
@@ -937,6 +938,35 @@ Status: 200 OK
 
 ## Friend
 
+### Get all friends of a single user
+
+```
+GET /users/:user_id/friends
+```
+
+#### Response
+
+```json
+[
+    {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "info": "I'm John Doe.",
+        "avatar_url": "http://gravatar.com/1.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    },
+    {
+        "id": "5384c6cc96eb36aa242cfdc7",
+        "name": "Lyman",
+        "email": "lyman@example.com",
+        "info": "I'm Lyman.",
+        "avatar_url": "http://gravatar.com/2.png",
+        "created_at": "2014-05-27T17:16:28.709Z"
+    }
+]
+```
+
 ### Send a friend request to a user
 
 A friend request will be sent to the target user as an notification.
@@ -960,6 +990,7 @@ User A wants to add user B as friend, then A should first
 ```
 POST /users/B/friends
 ```
+(substitute B with B's id)
 
 Then B will receive a notification (See [Friend request notification](#friend-request-notification) for the format
 of a friend request notification) regarding A's request. In order to acknowledge the 
