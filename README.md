@@ -34,6 +34,8 @@ EventChat API Specification
   * [Get all events that a user attends](#get-all-events-that-a-user-attends)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
+* [Friend](#friend)
+  * [Send a friend request to a user](#send-a-friend-request-to-a-user)
 * [Notification](#notification)
   * [Get all notifications](#get-all-notifications)
   * [Mark a single notification as read](#mark-a-single-notification-as-read)
@@ -933,6 +935,40 @@ Status: 200 OK
 ]
 ```
 
+## Friend
+
+### Send a friend request to a user
+
+A friend request will be sent to the target user as an notification.
+The target user has to resend another friend request back to the initiator
+so as the acknowledge the friendship.
+
+```
+POST /users/:user_id/friends
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+#### Example
+
+User A wants to add user B as friend, then A should first 
+
+```
+POST /users/B/friends
+```
+
+Then B will receive a notification (See [Friend request notification](#friend-request-notification) for the format
+of a friend request notification) regarding A's request. In order to acknowledge the 
+friendship, B should send another friend request back to A.
+
+```
+POST /users/A/friends
+```
+
 
 ## Notification
 
@@ -959,6 +995,27 @@ Status: 200 OK
     }
 ]
 ```
+
+##### Friend request notification
+
+More specifically, if the notification is a friend request,
+then the response will be like the following:
+
+```json
+[
+    {
+        "id": "5384c6cc96eb36aa242cfdc6",
+        "type": "friend",
+        "body": "{\"id\": \"5384c6cc96eb36aa242cfdc6\", \"name\": \"John Doe\", \"email\": \"johndoe@example.com\", \"info\": \"I'm John Doe.\", \"avatar_url\": \"http://gravatar.com/1.png\", \"created_at\": \"2014-05-27T17:16:28.709Z\" }",
+        "is_read": false,
+        "created_at": "2014-05-27T17:16:28.709Z"
+    }
+]
+```
+
+The body field is a serialized json containing the info of the user
+who initiated the friend request.
+
 
 
 ### Mark a single notification as read
