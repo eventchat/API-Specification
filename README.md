@@ -82,7 +82,7 @@ POST /session
 
 Name     |  Type  | Description
 ---------|--------|------------
-name     | String | **Required** The name of the user
+email    | String | **Required** The email of the user
 password | String | **Required** The password of the user
 
 #### Response
