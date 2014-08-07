@@ -32,6 +32,7 @@ EventChat API Specification
   * [Join an event](#join-an-event)
   * [Get attendees for a single event](#get-attendees-for-a-single-event)
   * [Get all events that a user attends](#get-all-events-that-a-user-attends)
+  * [Get all posts for a single event](#get-all-posts-for-a-single-event)
 * [Message](#message)
   * [Get all messages for a single event](#get-all-messages-for-a-single-event)
 * [Friend](#friend)
@@ -932,6 +933,62 @@ Status: 200 OK
         "info": "I'm John Doe.",
         "avatar_url": "http://gravatar.com/1.png",
         "created_at": "2014-05-27T17:16:28.709Z"
+    }
+]
+```
+
+
+
+
+### Get all posts for a single event
+
+```
+GET /events/:event_id/posts
+```
+
+#### Response
+
+```
+Status: 200 OK
+```
+
+```json
+[
+    {
+        "id": "53e2bfa4a898f0020087cd74",
+        "type": "text",
+        "title": "Another post",
+        "body": "This is an awesome event",
+        "author": {
+            "id": "53d6d158da0e0f0200e69de1",
+            "name": "lyman",
+            "email": "lyman@test.com",
+            "avatar_url": null,
+            "info": null,
+            "created_at": "2014-07-28T22:40:24.000Z"
+        },
+        "event": {
+            "id": "53d6d5a7da0e0f0200e69de6",
+            "organizer": {
+                "id": "53d6d196da0e0f0200e69de5",
+                "name": "claud",
+                "email": "claud@test.com",
+                "avatar_url": null,
+                "info": null,
+                "created_at": "2014-07-28T22:41:26.000Z"
+            },
+            "name": "RubyConf",
+            "description": "Ruby Conference",
+            "longitude": 40.441553,
+            "latitude": -79.9419468,
+            "address": "5000 Forbes Ave, Pittsburgh, PA 15213",
+            "start_time": "2014-05-27T17:16:28.709Z",
+            "end_time": "2014-05-27T17:16:28.709Z",
+            "created_at": "2014-07-28T22:58:47.000Z"
+        },
+        "comments": [],
+        "liked_by": [],
+        "created_at": "2014-08-06T23:52:04.000Z"
     }
 ]
 ```
